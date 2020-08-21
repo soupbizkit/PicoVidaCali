@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="picoVida.css">
+    <title></title>
+  </head>
+<body>
+<!--Código desarrollado por:
+Walter Santacruz Estudiante de ingeniería de sistemas de la universidad del Valle - Cali
+@Clvrwords on twitter
+@walpicts on instagram-->
+  <div class="box">
+    <div id="ced-menu" class="cedula">
+      <h2 align=center>Cédula</h2>
+    </div>
+  <div class="table-cedula">
+      <table class="table" id="tabla-cedula" border="0" align=center>
+        <thead>
+            <th>0</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+        </thead>
+        <tr>
+            <th>
+              <input type="radio" name="ced" value="0" onclick="BorrarMensajePorPlaca()">
+            </th>
+            <th><input type="radio" name="ced" value="1" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="2" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="3" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="4" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="5" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="6" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="7" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="8" onclick="BorrarMensajePorPlaca()"></th>
+            <th><input type="radio" name="ced" value="9" onclick="BorrarMensajePorPlaca()"></th>
+        </tr>
+
+      </table>
+</div>
+
+
+    <div id="pla-menu" class="placa">
+      <h2 align=center >Placa</h2>
+    </div>
+    <div class="table-placa">
+      <table class="table" border="0" align=center >
+        <thead>
+          <th>0</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+        </thead>
+        <tr>
+          <th><input type="radio" name="pl" value="0" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="1" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="2" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="3" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="4" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="5" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="6" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="7" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="8" onclick="BorrarMensajePorCed()"></th>
+          <th><input type="radio" name="pl" value="9" onclick="BorrarMensajePorCed()"></th>
+        </tr>
+      </table>
+  </div>
+
+    <div class="botondiv" align=center>
+      <button id="consultar" type="button" class="boton">Consultar días</button>
+    </div>
+
+    <div class="mensajes" align = center>
+      <p id="cedula"></p>
+      <p id="placa"></p>
+      <p id="mensaje1"> </p>
+      <p id="mensaje2"> </p>
+    </div>
+
+
+</div>
+  <script src="picoVida.js"></script>
+  </body>
+</html>
